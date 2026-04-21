@@ -1,0 +1,40 @@
+{
+  "kitchens": [
+    {"id": "K001", "name": "Amma's Kitchen", "owner": "Lakshmi Devi", "cuisine": "South Indian", "rating": 4.8, "reviews": 124, "status": "Open", "timing": "7AM - 9PM", "block": "A", "flat": "A-101", "veg_only": true, "image": "https://img.icons8.com/color/96/cooking-pot.png"},
+    {"id": "K002", "name": "Punjabi Tadka", "owner": "Gurpreet Singh", "cuisine": "North Indian", "rating": 4.5, "reviews": 89, "status": "Open", "timing": "11AM - 10PM", "block": "B", "flat": "B-204", "veg_only": false, "image": "https://img.icons8.com/color/96/curry.png"},
+    {"id": "K003", "name": "Healthy Bites", "owner": "Priya Sharma", "cuisine": "Health Food", "rating": 4.6, "reviews": 67, "status": "Open", "timing": "8AM - 8PM", "block": "C", "flat": "C-305", "veg_only": true, "image": "https://img.icons8.com/color/96/salad.png"},
+    {"id": "K004", "name": "Dragon Wok", "owner": "Chen Wei", "cuisine": "Chinese", "rating": 4.3, "reviews": 45, "status": "Closed", "timing": "12PM - 9PM", "block": "D", "flat": "D-102", "veg_only": false, "image": "https://img.icons8.com/color/96/noodles.png"}
+  ],
+  "meals": [
+    {"id": "M001", "kitchen_id": "K001", "name": "Idli Sambar", "category": "Breakfast", "price": 60, "prep_time": 15, "rating": 4.9, "veg": true, "spice": "Mild", "description": "Soft steamed idlis served with piping hot sambar and coconut chutney", "available": true, "image": "🍚"},
+    {"id": "M002", "kitchen_id": "K001", "name": "Masala Dosa", "category": "Breakfast", "price": 80, "prep_time": 20, "rating": 4.8, "veg": true, "spice": "Medium", "description": "Crispy golden dosa filled with spiced potato masala", "available": true, "image": "🫓"},
+    {"id": "M003", "kitchen_id": "K001", "name": "Sambar Rice", "category": "Lunch", "price": 100, "prep_time": 25, "rating": 4.7, "veg": true, "spice": "Medium", "description": "Comforting sambar mixed with steamed rice, served with papad", "available": true, "image": "🍛"},
+    {"id": "M004", "kitchen_id": "K002", "name": "Butter Chicken", "category": "Lunch", "price": 180, "prep_time": 30, "rating": 4.6, "veg": false, "spice": "Medium", "description": "Tender chicken in rich creamy tomato butter gravy", "available": true, "image": "🍗"},
+    {"id": "M005", "kitchen_id": "K002", "name": "Dal Makhani", "category": "Dinner", "price": 120, "prep_time": 20, "rating": 4.5, "veg": true, "spice": "Mild", "description": "Slow cooked black lentils in buttery tomato sauce", "available": true, "image": "🫘"},
+    {"id": "M006", "kitchen_id": "K002", "name": "Paneer Tikka", "category": "Snacks", "price": 150, "prep_time": 25, "rating": 4.4, "veg": true, "spice": "Hot", "description": "Marinated cottage cheese grilled to perfection with peppers", "available": true, "image": "🧀"},
+    {"id": "M007", "kitchen_id": "K003", "name": "Quinoa Bowl", "category": "Lunch", "price": 160, "prep_time": 20, "rating": 4.7, "veg": true, "spice": "Mild", "description": "Nutritious quinoa with roasted vegetables and tahini dressing", "available": true, "image": "🥗"},
+    {"id": "M008", "kitchen_id": "K003", "name": "Oats Porridge", "category": "Breakfast", "price": 70, "prep_time": 10, "rating": 4.5, "veg": true, "spice": "Mild", "description": "Creamy oats with nuts, seeds and seasonal fruits", "available": true, "image": "🥣"},
+    {"id": "M009", "kitchen_id": "K004", "name": "Veg Fried Rice", "category": "Lunch", "price": 130, "prep_time": 20, "rating": 4.3, "veg": true, "spice": "Medium", "description": "Wok-tossed rice with fresh vegetables and soy sauce", "available": false, "image": "🍜"},
+    {"id": "M010", "kitchen_id": "K004", "name": "Chicken Noodles", "category": "Dinner", "price": 160, "prep_time": 25, "rating": 4.4, "veg": false, "spice": "Hot", "description": "Stir-fried noodles with chicken and Chinese sauces", "available": false, "image": "🍝"}
+  ],
+  "residents": [
+    {"id": "R001", "name": "Ganesh Gowri", "flat": "A-201", "block": "A", "tower": "Tower 1", "phone": "9876543210", "email": "ganesh@example.com", "dietary": "Vegetarian"},
+    {"id": "R002", "name": "Anita Reddy", "flat": "B-302", "block": "B", "tower": "Tower 2", "phone": "9876543211", "email": "anita@example.com", "dietary": "Non-Vegetarian"},
+    {"id": "R003", "name": "Ravi Kumar", "flat": "C-101", "block": "C", "tower": "Tower 1", "phone": "9876543212", "email": "ravi@example.com", "dietary": "Vegan"}
+  ],
+  "orders": [
+    {"id": "ORD001", "resident_id": "R001", "resident_name": "Ganesh Gowri", "flat": "A-201", "kitchen_id": "K001", "kitchen_name": "Amma's Kitchen", "items": [{"meal_id": "M001", "name": "Idli Sambar", "qty": 2, "price": 60}, {"meal_id": "M002", "name": "Masala Dosa", "qty": 1, "price": 80}], "total": 200, "delivery_fee": 20, "grand_total": 220, "status": "Delivered", "slot": "8:00 AM", "placed_at": "2026-04-21 07:30", "delivered_at": "2026-04-21 08:05", "gate_entry": "Confirmed", "runner": "Ramu", "otp": "4521", "rating": 5},
+    {"id": "ORD002", "resident_id": "R002", "resident_name": "Anita Reddy", "flat": "B-302", "kitchen_id": "K002", "kitchen_name": "Punjabi Tadka", "items": [{"meal_id": "M004", "name": "Butter Chicken", "qty": 1, "price": 180}], "total": 180, "delivery_fee": 20, "grand_total": 200, "status": "Out for Delivery", "slot": "1:00 PM", "placed_at": "2026-04-21 12:30", "delivered_at": null, "gate_entry": "Confirmed", "runner": "Suresh", "otp": "7843", "rating": null},
+    {"id": "ORD003", "resident_id": "R001", "resident_name": "Ganesh Gowri", "flat": "A-201", "kitchen_id": "K003", "kitchen_name": "Healthy Bites", "items": [{"meal_id": "M007", "name": "Quinoa Bowl", "qty": 1, "price": 160}], "total": 160, "delivery_fee": 20, "grand_total": 180, "status": "Preparing", "slot": "1:30 PM", "placed_at": "2026-04-21 12:45", "delivered_at": null, "gate_entry": "Pending", "runner": null, "otp": "3391", "rating": null},
+    {"id": "ORD004", "resident_id": "R003", "resident_name": "Ravi Kumar", "flat": "C-101", "kitchen_id": "K001", "kitchen_name": "Amma's Kitchen", "items": [{"meal_id": "M003", "name": "Sambar Rice", "qty": 2, "price": 100}], "total": 200, "delivery_fee": 20, "grand_total": 220, "status": "Order Placed", "slot": "2:00 PM", "placed_at": "2026-04-21 13:00", "delivered_at": null, "gate_entry": "Pending", "runner": null, "otp": "6672", "rating": null}
+  ],
+  "delivery_agents": [
+    {"id": "D001", "name": "Ramu", "phone": "9876540001", "status": "Available", "current_order": null},
+    {"id": "D002", "name": "Suresh", "phone": "9876540002", "status": "On Delivery", "current_order": "ORD002"},
+    {"id": "D003", "name": "Venkat", "phone": "9876540003", "status": "Available", "current_order": null}
+  ],
+  "gate_logs": [
+    {"id": "G001", "order_id": "ORD001", "agent": "Ramu", "kitchen": "Amma's Kitchen", "flat": "A-201", "entry_time": "2026-04-21 07:55", "exit_time": "2026-04-21 08:10", "status": "Completed"},
+    {"id": "G002", "order_id": "ORD002", "agent": "Suresh", "kitchen": "Punjabi Tadka", "flat": "B-302", "entry_time": "2026-04-21 12:50", "exit_time": null, "status": "Inside"}
+  ]
+}
